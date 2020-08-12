@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>兼容性问题 | hagi笔记</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="黄小基的笔记">
+    <link rel="preload" href="/assets/css/0.styles.339bfd79.css" as="style"><link rel="preload" href="/assets/js/app.646fa2cb.js" as="script"><link rel="preload" href="/assets/js/2.58f4be8b.js" as="script"><link rel="preload" href="/assets/js/6.beb2b037.js" as="script"><link rel="prefetch" href="/assets/js/10.d7b693ff.js"><link rel="prefetch" href="/assets/js/11.901e9fc0.js"><link rel="prefetch" href="/assets/js/12.22449e20.js"><link rel="prefetch" href="/assets/js/13.3124d834.js"><link rel="prefetch" href="/assets/js/14.6cd76895.js"><link rel="prefetch" href="/assets/js/15.b47db7b7.js"><link rel="prefetch" href="/assets/js/16.163eb3a1.js"><link rel="prefetch" href="/assets/js/17.3faaa73a.js"><link rel="prefetch" href="/assets/js/18.e2ff48e4.js"><link rel="prefetch" href="/assets/js/19.ebce7b75.js"><link rel="prefetch" href="/assets/js/20.c488fab8.js"><link rel="prefetch" href="/assets/js/21.cf60c5ae.js"><link rel="prefetch" href="/assets/js/22.2a403029.js"><link rel="prefetch" href="/assets/js/23.4f6a3adb.js"><link rel="prefetch" href="/assets/js/24.b71d1107.js"><link rel="prefetch" href="/assets/js/25.32a11254.js"><link rel="prefetch" href="/assets/js/3.47b18929.js"><link rel="prefetch" href="/assets/js/4.44e44658.js"><link rel="prefetch" href="/assets/js/5.0e269fb0.js"><link rel="prefetch" href="/assets/js/7.44c2bbb0.js"><link rel="prefetch" href="/assets/js/8.4777adf2.js"><link rel="prefetch" href="/assets/js/9.1d87142b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.339bfd79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">hagi笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>es6灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序技巧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试题相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实践中遇到的一些问题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue相关知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>element框架使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mpvue坑点</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>兼容性问题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/compatible/" aria-current="page" class="active sidebar-link">兼容性问题</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="兼容性问题"><a href="#兼容性问题" class="header-anchor">#</a> 兼容性问题</h3> <p>1、iphone的300毫秒延迟  可以使用引入fastclick解决
+iphone的scroll会有延迟卡顿的问题，加上一个样式即可解决
+-webkit-overflow-scrolling:touch;</p> <p>2、样式兼容问题:padding与margin</p> <p>3、移动端手机设置100vh和100%的区别，100vh在safiri会计算到底部的上一栏的高度，而100%不会出现这种问题</p> <p>4、video自动播放，一种是引入vue-player-video实现，但是会有浏览器限制，如谷歌需要设置一个自动播放才可以出现，相反，原生的可以实现自动播放，但需要设置静音播放才可以实现。</p> <p>5、微信小程序的坑点有2
+a、textarea的层级问题；
+我的解决思路，建立一个一样大小文字一样的，进行if判断，当点击这个框的时候，然后调聚焦方式，当失去焦点的时候if等于false，显示另外一个固定好的输入框。</p> <p>6、获取对象长度的方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> property <span class="token keyword">in</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">,</span>property<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>8、ios 摇一摇的权限问题,ios 13+需要用户手动去获取权限，正常的做法是以下方式，如果进入页面就需要获取的话，需要额外做一个弹出框，
+引导用户点击确定，然后再执行以下方法，js直接执行该函数是无效的。如果要测试，是需要为安全域名的，即：https开头，本地是测试不了的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">permissionForShake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> DeviceMotionEvent<span class="token punctuation">.</span>requestPermission <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        DeviceMotionEvent<span class="token punctuation">.</span><span class="token function">requestPermission</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">permissionState</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>permissionState <span class="token operator">===</span> <span class="token string">'granted'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'devicemotion'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ios其他系统可以不通过请求直接摇一摇</span>
+        
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>9、隐藏微信自带的返回栏,vue项目在index.html加上以下js代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">;</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                isIOS <span class="token operator">=</span> <span class="token operator">!</span><span class="token operator">!</span>navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>fn<span class="token punctuation">.</span>isIOS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// window.history.pushState({}, &quot;title&quot;, &quot;#&quot;);</span>
+                    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'WeixinJSBridgeReady'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">onBridgeReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token function">WeixinJSBridge</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">'hideToolbar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">// 隐藏底部状态栏</span>
+                        <span class="token function">WeixinJSBridge</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">'hideOptionMenu'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// 隐藏右上角的三个点的选项</span>
+                        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ios'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token comment">// WeixinJSBridge.call('showToolbar');        // 显示底部状态栏</span>
+                        <span class="token comment">// WeixinJSBridge.call('showOptionMenu');     // 显示右上角的三个点的选项</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">//TODO handle the exception</span>
+            <span class="token punctuation">}</span>
+
+
+            <span class="token comment">// document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {</span>
+            <span class="token comment">//     WeixinJSBridge.call('hideToolbar');        // 隐藏底部状态栏</span>
+            <span class="token comment">//     WeixinJSBridge.call('hideOptionMenu');     // 隐藏右上角的三个点的选项</span>
+            <span class="token comment">//     // WeixinJSBridge.call('showToolbar');        // 显示底部状态栏</span>
+            <span class="token comment">//     // WeixinJSBridge.call('showOptionMenu');     // 显示右上角的三个点的选项</span>
+            <span class="token comment">// });</span>
+            <span class="token comment">///</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>10、部分安卓机型做动画操作时css请求的是第三方资源，会有以下报错</p> <div class="language- extra-class"><pre class="language-text"><code> DOMException: Failed to execute 'insertRule' on 'CSSStyleSheet': Cannot access StyleSheet to insertRule
+</code></pre></div><p>该问题可能是资源加载的问题，即，将第三方css资源移动至body标签最底部即可。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mpvue/" class="prev">
+        mpvue坑点集合
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.646fa2cb.js" defer></script><script src="/assets/js/2.58f4be8b.js" defer></script><script src="/assets/js/6.beb2b037.js" defer></script>
+  </body>
+</html>

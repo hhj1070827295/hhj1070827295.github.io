@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序 | hagi笔记</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="黄小基的笔记">
+    <link rel="preload" href="/assets/css/0.styles.339bfd79.css" as="style"><link rel="preload" href="/assets/js/app.646fa2cb.js" as="script"><link rel="preload" href="/assets/js/2.58f4be8b.js" as="script"><link rel="preload" href="/assets/js/25.32a11254.js" as="script"><link rel="prefetch" href="/assets/js/10.d7b693ff.js"><link rel="prefetch" href="/assets/js/11.901e9fc0.js"><link rel="prefetch" href="/assets/js/12.22449e20.js"><link rel="prefetch" href="/assets/js/13.3124d834.js"><link rel="prefetch" href="/assets/js/14.6cd76895.js"><link rel="prefetch" href="/assets/js/15.b47db7b7.js"><link rel="prefetch" href="/assets/js/16.163eb3a1.js"><link rel="prefetch" href="/assets/js/17.3faaa73a.js"><link rel="prefetch" href="/assets/js/18.e2ff48e4.js"><link rel="prefetch" href="/assets/js/19.ebce7b75.js"><link rel="prefetch" href="/assets/js/20.c488fab8.js"><link rel="prefetch" href="/assets/js/21.cf60c5ae.js"><link rel="prefetch" href="/assets/js/22.2a403029.js"><link rel="prefetch" href="/assets/js/23.4f6a3adb.js"><link rel="prefetch" href="/assets/js/24.b71d1107.js"><link rel="prefetch" href="/assets/js/3.47b18929.js"><link rel="prefetch" href="/assets/js/4.44e44658.js"><link rel="prefetch" href="/assets/js/5.0e269fb0.js"><link rel="prefetch" href="/assets/js/6.beb2b037.js"><link rel="prefetch" href="/assets/js/7.44c2bbb0.js"><link rel="prefetch" href="/assets/js/8.4777adf2.js"><link rel="prefetch" href="/assets/js/9.1d87142b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.339bfd79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">hagi笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>es6灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>微信小程序技巧</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wxskill/" aria-current="page" class="active sidebar-link">微信小程序</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试题相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实践中遇到的一些问题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue相关知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>element框架使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mpvue坑点</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>兼容性问题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="微信小程序"><a href="#微信小程序" class="header-anchor">#</a> 微信小程序</h4> <h5 id="按钮样式的重置写法"><a href="#按钮样式的重置写法" class="header-anchor">#</a> 按钮样式的重置写法</h5> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">button</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 0<span class="token selector">;
+  &amp;::after</span> <span class="token punctuation">{</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.button-hover</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="动态改变循环出来的值"><a href="#动态改变循环出来的值" class="header-anchor">#</a> 动态改变循环出来的值</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 动态传递id</span>
+<span class="token operator">&lt;</span>block wx<span class="token operator">:</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;{{list}}&quot;</span> wx<span class="token operator">:</span>key<span class="token operator">=</span><span class="token string">&quot;{{index}}&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>view catch<span class="token operator">:</span>tap<span class="token operator">=</span><span class="token string">&quot;onChangeName&quot;</span> data<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">&quot;{{item.id}}&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>block<span class="token operator">&gt;</span>
+
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    list<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'wang'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'li'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">onChangeName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 拿到id</span>
+   <span class="token keyword">let</span> id <span class="token operator">=</span> event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id
+   <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">list[</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">].name</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> val <span class="token operator">=</span> <span class="token string">'zhang'</span>
+   <span class="token comment">// 设置值</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">:</span> val
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h5 id="解析html"><a href="#解析html" class="header-anchor">#</a> 解析HTML</h5> <p>下载 <code>wxParse</code> ，放到utils目录下<code>(https://github.com/icindy/wxParse)</code></p> <p>在JS页面引入： <code>import WxParse from '../../utils/wxParse/wxParse'</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token operator">:</span><span class="token punctuation">{</span>
+    contentHTML<span class="token operator">:</span><span class="token string">''</span> <span class="token comment">// 解析后的HTML</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 请求到的HTML数据</span>
+    <span class="token keyword">let</span> content <span class="token operator">=</span> <span class="token string">'&lt;div&gt;我是HTML代码&lt;/div&gt;'</span><span class="token punctuation">,</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    WxParse<span class="token punctuation">.</span><span class="token function">wxParse</span><span class="token punctuation">(</span><span class="token string">'contentHTML'</span><span class="token punctuation">,</span> <span class="token string">'html'</span><span class="token punctuation">,</span> content<span class="token punctuation">,</span> that<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token operator">&lt;</span><span class="token keyword">import</span> src<span class="token operator">=</span><span class="token string">&quot;../../utils/wxParse/wxParse.wxml&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>view<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 显示内容 <span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>template is<span class="token operator">=</span><span class="token string">&quot;wxParse&quot;</span> data<span class="token operator">=</span><span class="token string">&quot;{{wxParseData:contentHTML.nodes}}&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+</code></pre></div><h5 id="上传图片-可删除图片"><a href="#上传图片-可删除图片" class="header-anchor">#</a> 上传图片(可删除图片)</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    imgList<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 使用async await是因为图片上传是异步的</span>
+  <span class="token function-variable function">onSub</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 点击提交后，开始上传图片</span>
+     <span class="token keyword">let</span> imgUrls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+     <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> index <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>imgList<span class="token punctuation">.</span>length<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>imgList<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+         <span class="token comment">// 这里要注意把res.data parse一下，默认是字符串</span>
+         <span class="token keyword">let</span> parseData <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+         imgUrls<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>parseData<span class="token punctuation">.</span>data<span class="token punctuation">)</span> <span class="token comment">// 图片地址</span>
+       <span class="token punctuation">}</span><span class="token punctuation">)</span>
+     <span class="token punctuation">}</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>imgUrls<span class="token punctuation">)</span> <span class="token comment">// 3张图片上传成功后，执行其他操作</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 删除某张图片</span>
+  <span class="token function-variable function">clearImg</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> imgList <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>imgList
+    <span class="token keyword">let</span> id <span class="token operator">=</span> params<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id <span class="token comment">// 图片索引</span>
+    imgList<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 删除</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      imgList<span class="token operator">:</span> imgList
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">chooseImage</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    wx<span class="token punctuation">.</span><span class="token function">chooseImage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// 做多3张</span>
+      sizeType<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'original'</span><span class="token punctuation">,</span> <span class="token string">'compressed'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      sourceType<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'album'</span><span class="token punctuation">,</span> <span class="token string">'camera'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 存储临时地址</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          imgList<span class="token operator">:</span> res<span class="token punctuation">.</span>tempFilePaths
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">uploadFile</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">filePath</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 返回Promise是为了解决图片上传的异步问题</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      wx<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token operator">:</span> app<span class="token punctuation">.</span>globalData<span class="token punctuation">.</span>baseUrl <span class="token operator">+</span> <span class="token string">'/file/upload'</span><span class="token punctuation">,</span> <span class="token comment">// 上传地址</span>
+        filePath<span class="token operator">:</span> filePath<span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'file'</span><span class="token punctuation">,</span> <span class="token comment">// 这里的具体值，问后端人员</span>
+        formData<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        header<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;Content-Type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;multipart/form-data&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+          <span class="token comment">// 图片上传成功后，后端会返回一个地址，可以把它存到imgUrls</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>imgUrls<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">fail</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+<span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;sale after-pic&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>block wx<span class="token operator">:</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;{{imgList}}&quot;</span> wx<span class="token operator">:</span>key<span class="token operator">=</span><span class="token string">&quot;{{index}}&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;pic&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>image src<span class="token operator">=</span><span class="token string">&quot;{{item}}&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>icon type<span class="token operator">=</span><span class="token string">&quot;clear&quot;</span> size<span class="token operator">=</span><span class="token string">&quot;20&quot;</span> catchtap<span class="token operator">=</span><span class="token string">&quot;clearImg&quot;</span> data<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">&quot;{{index}}&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>block<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>image src<span class="token operator">=</span><span class="token string">&quot;../../images/upload.png&quot;</span> catchtap<span class="token operator">=</span><span class="token string">&quot;chooseImage&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button catchtap<span class="token operator">=</span><span class="token string">&quot;onSub&quot;</span><span class="token operator">&gt;</span>提交<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/es6skill/" class="prev">
+        es6的一些用法
+      </a></span> <span class="next"><a href="/interview/">
+        面试相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.646fa2cb.js" defer></script><script src="/assets/js/2.58f4be8b.js" defer></script><script src="/assets/js/25.32a11254.js" defer></script>
+  </body>
+</html>

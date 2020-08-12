@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue axios封装 | hagi笔记</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="黄小基的笔记">
+    <link rel="preload" href="/assets/css/0.styles.339bfd79.css" as="style"><link rel="preload" href="/assets/js/app.646fa2cb.js" as="script"><link rel="preload" href="/assets/js/2.58f4be8b.js" as="script"><link rel="preload" href="/assets/js/21.cf60c5ae.js" as="script"><link rel="prefetch" href="/assets/js/10.d7b693ff.js"><link rel="prefetch" href="/assets/js/11.901e9fc0.js"><link rel="prefetch" href="/assets/js/12.22449e20.js"><link rel="prefetch" href="/assets/js/13.3124d834.js"><link rel="prefetch" href="/assets/js/14.6cd76895.js"><link rel="prefetch" href="/assets/js/15.b47db7b7.js"><link rel="prefetch" href="/assets/js/16.163eb3a1.js"><link rel="prefetch" href="/assets/js/17.3faaa73a.js"><link rel="prefetch" href="/assets/js/18.e2ff48e4.js"><link rel="prefetch" href="/assets/js/19.ebce7b75.js"><link rel="prefetch" href="/assets/js/20.c488fab8.js"><link rel="prefetch" href="/assets/js/22.2a403029.js"><link rel="prefetch" href="/assets/js/23.4f6a3adb.js"><link rel="prefetch" href="/assets/js/24.b71d1107.js"><link rel="prefetch" href="/assets/js/25.32a11254.js"><link rel="prefetch" href="/assets/js/3.47b18929.js"><link rel="prefetch" href="/assets/js/4.44e44658.js"><link rel="prefetch" href="/assets/js/5.0e269fb0.js"><link rel="prefetch" href="/assets/js/6.beb2b037.js"><link rel="prefetch" href="/assets/js/7.44c2bbb0.js"><link rel="prefetch" href="/assets/js/8.4777adf2.js"><link rel="prefetch" href="/assets/js/9.1d87142b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.339bfd79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">hagi笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>es6灵活运用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序技巧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试题相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实践中遇到的一些问题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue相关知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vueskill/" aria-current="page" class="sidebar-link">vue 的使用心得</a></li><li><a href="/vueskill/axios.html" aria-current="page" class="active sidebar-link">vue axios封装</a></li><li><a href="/vueskill/router.html" class="sidebar-link">路由相关</a></li><li><a href="/vueskill/vuecli.html" class="sidebar-link">vue cli的使用心得</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>element框架使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mpvue坑点</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>兼容性问题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h5 id="vue-axios封装"><a href="#vue-axios封装" class="header-anchor">#</a> vue axios封装</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Message <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'@/store'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getToken <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/utils/auth'</span>
+
+<span class="token comment">// 创建axios实例</span>
+<span class="token keyword">const</span> service <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  baseURL<span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">BASE_API</span><span class="token punctuation">,</span> <span class="token comment">// api的base_url</span>
+  timeout<span class="token operator">:</span> <span class="token number">5000</span> <span class="token comment">// 请求超时时间</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// request拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">config</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Do something before request is sent</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'X-Token'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">getToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 让每个请求携带token--['X-Token']为自定义key 请根据实际情况自行修改</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> config
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Do something with request error</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token comment">// for debug</span>
+  Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// respone拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token parameter">response</span> <span class="token operator">=&gt;</span> response<span class="token punctuation">,</span>
+  <span class="token comment">/**
+  * 下面的注释为通过response自定义code来标示请求状态，当code返回如下情况为权限有问题，登出并返回到登录页
+  * 如通过xmlhttprequest 状态码标识 逻辑可写在下面error中
+  */</span>
+  <span class="token comment">//  const res = response.data;</span>
+  <span class="token comment">//     if (res.code !== 20000) {</span>
+  <span class="token comment">//       Message({</span>
+  <span class="token comment">//         message: res.message,</span>
+  <span class="token comment">//         type: 'error',</span>
+  <span class="token comment">//         duration: 5 * 1000</span>
+  <span class="token comment">//       });</span>
+  <span class="token comment">//       // 50008:非法的token; 50012:其他客户端登录了;  50014:Token 过期了;</span>
+  <span class="token comment">//       if (res.code === 50008 || res.code === 50012 || res.code === 50014) {</span>
+  <span class="token comment">//         MessageBox.confirm('你已被登出，可以取消继续留在该页面，或者重新登录', '确定登出', {</span>
+  <span class="token comment">//           confirmButtonText: '重新登录',</span>
+  <span class="token comment">//           cancelButtonText: '取消',</span>
+  <span class="token comment">//           type: 'warning'</span>
+  <span class="token comment">//         }).then(() =&gt; {</span>
+  <span class="token comment">//           store.dispatch('FedLogOut').then(() =&gt; {</span>
+  <span class="token comment">//             location.reload();// 为了重新实例化vue-router对象 避免bug</span>
+  <span class="token comment">//           });</span>
+  <span class="token comment">//         })</span>
+  <span class="token comment">//       }</span>
+  <span class="token comment">//       return Promise.reject('error');</span>
+  <span class="token comment">//     } else {</span>
+  <span class="token comment">//       return response.data;</span>
+  <span class="token comment">//     }</span>
+  <span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'err'</span> <span class="token operator">+</span> error<span class="token punctuation">)</span><span class="token comment">// for debug</span>
+    <span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      message<span class="token operator">:</span> error<span class="token punctuation">.</span>message<span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+      duration<span class="token operator">:</span> <span class="token number">5</span> <span class="token operator">*</span> <span class="token number">1000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> service
+</code></pre></div><h5 id="axios使用"><a href="#axios使用" class="header-anchor">#</a> axios使用</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">'@/utils/request'</span>
+
+<span class="token comment">//使用</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getInfo</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    url<span class="token operator">:</span> <span class="token string">'/user/info'</span><span class="token punctuation">,</span>
+    method<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+    params
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vueskill/" class="prev router-link-active">
+        vue 的使用心得
+      </a></span> <span class="next"><a href="/vueskill/router.html">
+        路由相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.646fa2cb.js" defer></script><script src="/assets/js/2.58f4be8b.js" defer></script><script src="/assets/js/21.cf60c5ae.js" defer></script>
+  </body>
+</html>
